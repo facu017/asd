@@ -232,7 +232,25 @@ $b)
 
 
 $update)
-
+echo -e "$nc($azul*$nc)$verde Comprobando estado internet.. please wait.."
+sleep 4
+if ping -q -w 1 -c 1 google.com > /dev/null; then
+echo -e "$nc($azul*$nc)$verde Actualizando programa.. en 5 segundos.."
+sleep 5 
+if [ -e $directory/test.sh ]
+then
+rm $directory/test.sh
+fi
+curl https://raw.githubusercontent.com/facu017/asd/test.sh > test.sh
+echo -e "$nc($azul*$nc)$verde Programa Actualizado.. vuelva a ejecutarlo nuevamente..$nc"
+sleep 2
+exit                                                                                                                                                                
+else 
+echo
+echo
+echo -e "$nc($azul*$nc)$verde Internet no disponible.. saliendo..$nc" 
+exit                                                                                                                                                              
+fi       
 ;;
 #FIN OPCION UPDATE MENU PRINCIPAL
 
