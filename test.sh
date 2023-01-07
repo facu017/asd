@@ -266,7 +266,7 @@ exit
 *)
 
 
-echo -e "$red(Error)$rojo $REPLY$verde Opcion no valida$green"
+echo -e "$rojo(Error)$verde $REPLY $rojo Opcion no valida$verde"
 ;;
 esac
 done
