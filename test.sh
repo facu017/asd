@@ -257,7 +257,7 @@ fi
 
 
 $c)
-echo -e "$nc($azul*$nc)$verde Adios que tengas buen dia..$rojo saliendo del script..$nc"
+echo -e "$nc($azul*$nc)$verde Adios que tengas buen dia.. $rojo saliendo del script.. $nc"
 sleep 1
 exit
 ;;
