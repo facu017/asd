@@ -242,7 +242,7 @@ if [ -e $directory/test.sh ]
 then
 rm $directory/test.sh
 fi
-curl https://raw.githubusercontent.com/facu017/asd/test.sh > test.sh
+curl https://raw.githubusercontent.com/facu017/asd/main/test.sh > test.sh
 echo -e "$nc($azul*$nc)$verde Programa Actualizado.. vuelva a ejecutarlo nuevamente..$nc"
 sleep 2
 exit                                                                                                                                                                
