@@ -142,7 +142,7 @@ sleep 5
 #Opciones menu
 
 a=$'\e[1;35mPaso 1 - Crear Backdoor Raiz\e[01;32m'
-b=$'\e[1;35mPaso 2 - Crear Script automatico para enviar el backdoor\e[01;32m'
+b=$'\e[1;35mPaso 2 - Crear Script automatico\e[01;32m'
 update=$'\e[1;35mActualizar programa\e[01;32m'
 c=$'\e[1;35mSalir del Programa\e[01;32m'
 
