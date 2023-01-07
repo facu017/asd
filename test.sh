@@ -61,7 +61,7 @@ echo -e "$nc($violeta2*$nc)$rojo ERROR:$azul nesesitas ser usuario$green root"
 exit 1
 fi
 
-echo -e "$azul(wget)$verde chequeando dependencias"
+echo -e "$azul(*)$verde chequeando dependencias"
 
 if which msfconsole >/dev/null; then 
 sleep 0.25
@@ -108,9 +108,9 @@ echo -e "$azul(toilet)$verde Instalado correctamente."
 else
 echo -e "$azul(toilet)$rojo no Instalado$nc"
 sleep 1
-echo -e "$azul(toilet)$green iniciando instalacion.. por favor esperar..$nc"
+echo -e "$azul(toilet)$verde iniciando instalacion.. por favor esperar..$nc"
 sleep 1
-apt-get install update -y &> /dev/null 
+apt-get install update -y
 apt-get install toilet -y &> /dev/null
 apt-get install ruby -y &> /dev/null
 gem install lolcat &> /dev/null
@@ -131,10 +131,10 @@ echo -e "$azul(wget)$verde Instalado correctamente."
 sleep 2
 fi
 echo
-echo -e "$azul(wget)$verde Dependencias completas.... $green actualizando repositorios por favor espera.."
+echo -e "$azul(*)$verde Dependencias completas.... $azul actualizando repositorios por favor espera.."
 sleep 3
 apt-get update -y &> /dev/null
-echo -e "$azul(wget)$verde Iniciando programa en 5 segundos...."
+echo -e "$azul(*)$verde Iniciando programa en 5 segundos....$nc"
 sleep 5
 
 
