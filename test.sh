@@ -272,7 +272,8 @@ esac
 done
 }
 #fin menu principal
-
+echo
+echo
 menu_principal #llamada a la funcion menu
 
 
