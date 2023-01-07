@@ -24,6 +24,13 @@ exit
 
 }
 
+#aseguramos q la persona ejecute el archivo con privilegios Root
+
+if [[ $EUID -ne 0 ]]; then	
+
+echo -e "$nc($violeta2*$nc)$rojo ERROR:$azul nesesitas ser usuario$green root"		
+exit 1
+fi
 
 
 #VERIFICA EL DIRECTORIO
@@ -53,13 +60,7 @@ else
 fi
 
 
-#aseguramos q la persona ejecute el archivo con privilegios Root
 
-if [[ $EUID -ne 0 ]]; then	
-
-echo -e "$nc($violeta2*$nc)$rojo ERROR:$azul nesesitas ser usuario$green root"		
-exit 1
-fi
 
 echo -e "$azul(*)$verde chequeando dependencias"
 
@@ -142,7 +143,7 @@ sleep 5
 
 a=$'\e[1;35mPaso 1 - Crear Backdoor Raiz\e[01;32m'
 b=$'\e[1;35mPaso 2 - Crear Script automatico para enviar el backdoor\e[01;32m'
-update=$'\e[1;35mPaso 3 - Crear Archivo de escucha\e[01;32m'
+update=$'\e[1;35mActualizar programa\e[01;32m'
 c=$'\e[1;35mSalir del Programa\e[01;32m'
 
 
@@ -151,7 +152,7 @@ cloundno=$'\e[1;35mNo gracias lo movere a mi servidor privado\e[01;32m'
 
 #mensaje y logo bienvenida
 clear
-toilet --filter border Backdoor Botnet Linux | lolcat
+toilet --filter border Backdoor Linux| lolcat
 echo
 echo -e "$violeta2(*)$azul Backdoor Bootnet linux$rojo v1.0$azul"
 sleep 2
@@ -256,7 +257,9 @@ fi
 
 
 $c)
-
+echo -e "$nc($azul*$nc)$verde Adios que tengas buen dia.. saliendo del script..$nc"
+sleep 1
+exit
 ;;
 #FIN OPCION C  (ultima opcion) MENU PRINCIPAL
 
