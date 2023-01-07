@@ -152,7 +152,7 @@ cloundno=$'\e[1;35mNo gracias lo movere a mi servidor privado\e[01;32m'
 
 #mensaje y logo bienvenida
 clear
-toilet --filter border Backdoor Linux| lolcat
+toilet --filter border Backdoor| lolcat
 echo
 echo -e "$violeta2(*)$azul Backdoor Bootnet linux$rojo v1.0$azul"
 sleep 2
